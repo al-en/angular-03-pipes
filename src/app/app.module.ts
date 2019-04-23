@@ -3,6 +3,12 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+// ANgular Material
+import { MaterialModule } from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 // Para cambiar a idioma espanol
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
@@ -23,7 +29,9 @@ import { ContrasenaPipe } from './pipes/contrasena.pipe';
     ContrasenaPipe  // Se agrega el pipe CapitalizadoPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [{provide:LOCALE_ID, useValue:'es'}],
   bootstrap: [AppComponent]

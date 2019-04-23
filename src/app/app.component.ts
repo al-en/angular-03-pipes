@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatProgressBarModule } from '@angular/material';
+import { MatProgressBarModule, MatButtonModule } from '@angular/material';
 
 @Component({
   selector: 'app-root',
