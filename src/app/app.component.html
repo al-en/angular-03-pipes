@@ -128,3 +128,22 @@
 <pre>
 {{ persona | json }}
 </pre>
+
+<h4>Video</h4>
+<iframe width="560" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h4>Pipe contrasena</h4>
+<table>
+  <tr>
+    <td>Contrasena:{{activo}}</td>
+    <td>{{nombre | contrasena:activo}}</td>
+  </tr>
+  <tr>
+    <td><button
+        mat-button
+        color="primary"
+          (click)="activo = !activo">Activar/Desactivar</button>
+    </td>
+    <td></td>
+  </tr>
+</table>

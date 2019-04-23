@@ -33,4 +33,8 @@ export class AppComponent {
   fecha = new Date();
 
   nombre2 = "almendRa estRAda naVaRRo";
+
+  video = 'DyDfgMOUjCI';
+
+  activo:boolean = true;
 }
